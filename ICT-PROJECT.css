@@ -1,0 +1,323 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-top: 80px; /* To ensure the content isn't hidden under the fixed navbar */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #34495e; /* Darker background for contrast */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    font-size: 1.4rem; /* Larger size for better visibility */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e74c3c; /* Red hover effect */
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e74c3c; /* Red hover effect */
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    border-bottom: 3px solid #e74c3c;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+#about {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#about p a {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#about p a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* Experience Section */
+#experience {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.timeline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+}
+
+.timeline-date {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Education Section */
+#education {
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+}
+
+.timeline-item-education {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.timeline-item-education:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-item-education::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3498db;
+}
+
+/* Styling for Timeline Dates */
+.timeline-date-education {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Add Hover Effects */
+.timeline-item:hover .timeline-date,
+.timeline-item-education:hover .timeline-date-education {
+    color: #e74c3c; /* Change date color on hover */
+}
+
+.timeline-item h3,
+.timeline-item-education h3 {
+    color: #2c3e50;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* For Improved Spacing */
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    border-bottom: 3px solid #e74c3c;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 20px;
+    margin-bottom: 60px;
+}
+
+#skills {
+    background: linear-gradient(to right, #3498db, #e74c3c); /* Colorful background gradient */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills-icons i {
+    font-size: 4rem; /* Larger icons */
+    background-color: #fff;
+    color: #3498db;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-icons i:hover {
+    transform: translateY(-10px); /* Hover effect to lift icons */
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .timeline-item,
+    .timeline-item-education {
+        padding: 15px;
+    }
+
+    .timeline-item h3,
+    .timeline-item-education h3 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    /* Adjust the spacing and layout on smaller screens */
+    .social-icons a {
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+    
+    .skills-icons i {
+        font-size: 3rem;
+    }
+
+    .profile-img {
+        width: 50px;
+        height: 50px;
+    }
+}
